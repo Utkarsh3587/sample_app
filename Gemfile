@@ -20,6 +20,7 @@ gem 'tzinfo', '~> 1.2', '>= 1.2.2'
 gem 'tzinfo-data'
 gem 'sendgrid-ruby'
 gem 'resque', '~> 1.22.0'
+gem 'pg'
 group :development, :test do
   gem 'sqlite3',     '1.3.11'
   gem 'byebug'
