@@ -7,7 +7,8 @@ namespace :resque do
     ENV['BACKGROUND'] = 'yes'
     ENV['VERBOSE'] = '1'
 
-    Resque.redis = '127.0.0.1:6379'
+    Resque.redis = 'redis://rediscloud:aINWhpF72SwYxa0Y@pub-redis-13844.us-east-1-4.4.ec2.garantiadata.com:13844
+'#'127.0.0.1:6379'
   end
 end
 
