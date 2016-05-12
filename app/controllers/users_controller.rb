@@ -1,4 +1,3 @@
-require 'byebug'
 require './app/jobs/mail_sender'
 class UsersController < ApplicationController
   def show
