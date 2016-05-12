@@ -1,2 +1,1 @@
 web: bundle exec puma -t 1:1 -p ${PORT:-3000} -e ${RACK_ENV:-production}
-resque: env TERM_CHILD=1 bundle exec rake resque:work
