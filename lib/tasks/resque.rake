@@ -6,9 +6,8 @@ namespace :resque do
     ENV['PIDFILE'] = './resque.pid'
     ENV['BACKGROUND'] = 'yes'
     ENV['VERBOSE'] = '1'
-
-    Resque.redis = 'redis://rediscloud:aINWhpF72SwYxa0Y@pub-redis-13844.us-east-1-4.4.ec2.garantiadata.com:13844
-'#'127.0.0.1:6379'
+    ENV["REDISCLOUD_URL"] = 'redis://rediscloud:aINWhpF72SwYxa0Y@pub-redis-13844.us-east-1-4.4.ec2.garantiadata.com:13844'
+    Resque.redis = ENV["REDISCLOUD_URL"] #127.0.0.1:6379'
   end
 end
 
